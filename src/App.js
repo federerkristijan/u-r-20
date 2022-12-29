@@ -10,8 +10,8 @@ function App() {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/welcome" component={<Welcome />} />
-          <Route path="/products" component={<Products />} />
+          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
       </main>
     </div>
