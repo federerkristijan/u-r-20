@@ -6,12 +6,15 @@ import Products from "./pages/Products";
 function App() {
   return (
     <div>
-      <Route path="/welcome" >
-        <Welcome />
-      </Route>
-      <Route path="/products" >
-        <Products />
-      </Route>
+      <header></header>
+      <main>
+        <Route path="/welcome">
+          <Welcome />
+        </Route>
+        <Route path="/products">
+          <Products />
+        </Route>
+      </main>
     </div>
   );
 }
