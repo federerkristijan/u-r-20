@@ -5,7 +5,9 @@ const Navbar = () => {
     <header>
       <nav>
         <ul>
-          <li></li>
+          <li>
+            <a ref="/welcome">Welcome</a>
+          </li>
         </ul>
       </nav>
     </header>
