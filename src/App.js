@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Products from "./pages/Products";
 import Navbar from "./component/Navbar";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/product-detail/:productId" />
+          <Route path="/product-detail/:productId" element={ProductDetail} />
         </Routes>
       </main>
     </div>
