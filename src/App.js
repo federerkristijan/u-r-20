@@ -13,7 +13,9 @@ function App() {
         <Routes>
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/product-detail/:productId" element={ProductDetail} />
+          <Route path="/product-detail/:productId" loader={({ params }) => {
+            console.log(params.productId)
+          }} action={({ params }) => {}} element={<ProductDetail />} />
         </Routes>
       </main>
     </div>
