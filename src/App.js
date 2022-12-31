@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/product-detail/:productId" loader={({ params }) => {
+          <Route path="/products/:productId" loader={({ params }) => {
             console.log(params.productId)
           }} action={({ params }) => {}} element={<ProductDetail />} />
         </Routes>
