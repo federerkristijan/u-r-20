@@ -7,13 +7,13 @@ const Products = () => {
       <div>The Products Page</div>
       <ul>
         <li>
-          <Link>Book</Link>
+          <Link to="/products/book">Book</Link>
         </li>
         <li>
-          <Link>Food</Link>
+          <Link to="/products/food">Food</Link>
         </li>
         <li>
-          <Link>Cat</Link>
+          <Link to="/products/cat">Cat</Link>
         </li>
       </ul>
     </section>
