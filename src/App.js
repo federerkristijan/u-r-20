@@ -1,4 +1,5 @@
-import { Route, Routes, Redirect } from "react-router-dom";
+// react-router-dom v.6 Redirect -> Navigate
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import Welcome from "./pages/Welcome";
 import Products from "./pages/Products";
@@ -11,7 +12,7 @@ function App() {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/" exact element={<Redirect to="/welcome" />} />
+          <Route path="/" exact element={<Navigate to="/welcome" />} />
           <Route path="/welcome/*" element={<Welcome />} />
           <Route path="/products" exact element={<Products />} />
           <Route path="/products/:productId" />
