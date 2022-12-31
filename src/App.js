@@ -11,11 +11,9 @@ function App() {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/welcome/*" element={<Welcome />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:productId" loader={({ params }) => {
-            console.log(params.productId)
-          }} action={({ params }) => {}} element={<ProductDetail />} />
+          <Route path="/products/:productId" />
         </Routes>
       </main>
     </div>

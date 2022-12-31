@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import NewUser from "./NewUser";
 
 const Welcome = () => {
   return (
-    <div>The Welcome Page</div>
-  )
-}
+    <section>
+      <h1>The Welcome Page</h1>
+      <Routes>
+        <Route path="/new-user" element={<NewUser />} />
+      </Routes>
+    </section>
+  );
+};
 
-export default Welcome
+export default Welcome;
